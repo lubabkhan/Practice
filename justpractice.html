@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Practice</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  
+
+    <div class="ontest">
+        <form action="" method="post">
+<div id="time">
+            </div>
+            <div class="lock">
+                <img src="./image/lock2.png" width="170px" alt="">
+            </div>
+
+            
+
+            <div>
+                <label for="userid" class="testt pass">User ID</label>
+                <input name="name" type="text" placeholder="Enter Your User ID" class="test" id="name">
+            </div><br>
+
+            <div>
+                <label for="password" class="testt">Password </label>
+                <input name="name" type="password" placeholder="Password" class="test" id="name">
+            </div>
+
+            <div>
+                <input class="submit" type="submit" value="LogIn" id="name">
+            </div>
+
+        </form>
+    </div>
+    <script>
+        var timeDisplay = document.getElementById("time");
+
+        function refreshTime() {
+            var dateString = new Date().toLocaleString("en-IN", {
+                timeZone: "Asia/Kolkata",
+                hour:"numeric",minute:"numeric",second:"numeric",
+                hour12:true
+            });
+            var formattedString = dateString.replace(", ", " - ");
+            timeDisplay.innerHTML = formattedString;
+        }
+
+        setInterval(refreshTime, 1000);
+ </script>
+
+</body>
+
+</html>
