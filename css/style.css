@@ -83,6 +83,10 @@ body{
   font-weight: bold;
 }
 
-
+.hr{
+  background-color: rgb(255, 254, 0);
+  size: 5px;
+  width: 70%;
+}
 
 
